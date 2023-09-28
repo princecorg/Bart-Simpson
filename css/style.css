@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Simpsonfont';
+  src: url('../fonts/Simpsonfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  max-width: 1600px;
+  margin: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  font-family: 'Simpsonfont';
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+#board {
+  position: relative;
+  background: rgb(3, 57, 18);
+  border: 20px solid #312506;
+  margin: auto;
+  width: 90%;
+  min-height: 50vh;
+  color: white;
+  font-size: 28px;
+  text-align: left;
+  padding: 20px;
+  font-family: 'Simpsonfont';
+}
+
+#board img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#parameters span {
+  margin: 20px 0;
+  color: rgb(3, 57, 18);
+}
+
+/* Styles pour l'overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 12, 21, 0.9);
+  z-index: 1;
+}
+
+/* Styles pour la modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 2;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
