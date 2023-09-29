@@ -56,6 +56,15 @@ section {
   right: 0;
 }
 
+#board span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(
+    -50%
+  ); /*déplacement de 50% de sa propre longueur vers la gauche */
+}
+
 #parameters span {
   margin: 20px 0;
   color: rgb(3, 57, 18);
