@@ -5,7 +5,7 @@
             <?php
             $monTexte = 'Raphaël ne jouera pas à laXBox la nuit';
             for ($i = 0; $i < 8; $i++) {
-                echo "setTimeout(function() { writeLine('".$monTexte."'); }, " . ($i * 2000) . ");";
+                echo "setTimeout(function() { writeLine('" . $monTexte . "'); }, " . ($i * 2000) . ");";
             }
             ?>
         </script>
