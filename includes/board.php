@@ -9,6 +9,6 @@
             }
             ?>
         </script>
-        <img src="./images/BS.png" alt="Bart Simpson">
+        <img src="./assets/images/BS.png" alt="Bart Simpson">
     </div>
 </section>

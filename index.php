@@ -1,18 +1,19 @@
 <?php
+
 // Démarrage de la session
 session_start();
 
 // Affichage « de la partie haute » commune du site
-include('common/header.php');
+include('includes/header.php');
 
 // Affichage « du tableau
-include('common/board.php');
+include('includes/board.php');
 
 // Affichage de la partie paramètres
-include('common/parameters.php');
+include('includes/parameters.php');
 
 // Affichage de la partie basse du site, commun à l'ensemble du site.
-include('common/footer.php');
+include('includes/footer.php');
 
 // // Récupération des données JSON avec les données des élèves et de leurs punitions
 // $jsonData =  file_get_contents("url du fichier");

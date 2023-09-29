@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Simpsonfont';
-  src: url('../fonts/Simpsonfont.ttf') format('truetype');
+  font-family: "Simpsonfont";
+  src: url("../fonts/Simpsonfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +21,7 @@ h1 {
 
 h1,
 h2 {
-  font-family: 'Simpsonfont';
+  font-family: "Simpsonfont";
 }
 
 main {
@@ -47,7 +47,7 @@ section {
   font-size: 28px;
   text-align: left;
   padding: 20px;
-  font-family: 'Simpsonfont';
+  font-family: "Simpsonfont";
 }
 
 #board img {
