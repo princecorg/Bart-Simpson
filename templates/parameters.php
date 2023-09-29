@@ -4,9 +4,9 @@
     <div id="overlay" class="overlay"></div>
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close" id="closeModalBtn">&times;</span>
-            <h2>Ma Modal</h2>
-            <p>Contenu de la modal...</p>
+            <span id="closeModalBtn" class="close fa-solid fa-xmark fa-beat fa-2x"></span>
+            <h2>Paramétrage</h2>
+            <p>Contenu de la modale ...</p>
         </div>
     </div>
 </section>
