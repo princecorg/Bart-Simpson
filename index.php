@@ -4,16 +4,16 @@
 session_start();
 
 // Affichage « de la partie haute » commune du site
-include('temlates/header.php');
+include('templates/header.php');
 
 // Affichage « du tableau
-include('temlates/board.php');
+include('templates/board.php');
 
 // Affichage de la partie paramètres
-include('temlates/parameters.php');
+include('templates/parameters.php');
 
 // Affichage de la partie basse du site, commun à l'ensemble du site.
-include('temlates/footer.php');
+include('templates/footer.php');
 
 // // Récupération des données JSON avec les données des élèves et de leurs punitions
 // $jsonData =  file_get_contents("url du fichier");
