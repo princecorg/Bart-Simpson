@@ -18,7 +18,6 @@
             }
 
             <?php
-            include($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php');
             $saison = "Saison " . rand(1, 3);
             $episodeAleatoire = getPunitionAleatoire($saison);
             $episode = $episodeAleatoire['episode'];

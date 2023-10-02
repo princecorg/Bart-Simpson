@@ -1,13 +1,17 @@
 <?php
 
-function getPunitionAleatoire($saison)
+function getJsonFile($path)
 {
-    // Lire le contenu du fichier JSON
-    $jsonString = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '../assets/punishment.json');
-
+    $jsonString = file_get_contents($path);
     // Décoder le JSON en un tableau associatif
     $data = json_decode($jsonString, true);
+    // stocker le tableau associatif en session
+    return $data;
+}
 
+
+function getPunitionAleatoire($saison)
+{
     // Vérifier si la saison donnée existe dans le JSON
     if (isset($data['saisons'][$saison])) {
         // Récupérer les punitions de la saison donnée
@@ -25,4 +29,15 @@ function getPunitionAleatoire($saison)
         // Si la saison donnée n'existe pas dans le JSON
         return array('episode' => '', 'punition' => "Saison non trouvée ou punition non disponible pour cette saison.");
     }
+}
+
+function showSelect($list)
+{
+    $optionNb = count($list['saisons']);
+    $seasonNames = array_keys($list['saisons']);
+    echo' <select id="saison" name="saison">';
+    for($i = 0; $i < $optionNb; $i++) {
+        echo' <option value="' . $seasonNames[$i] . '">' . $seasonNames[$i] . '</option>';
+    }
+    echo' </select>';
 }
