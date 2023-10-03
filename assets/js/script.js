@@ -20,3 +20,9 @@ overlay.addEventListener("click", () => {
   modal.style.display = "none";
   overlay.style.display = "none";
 });
+
+// Gestion du bouton de Replay
+let playBtn = document.getElementById("playBtn");
+playBtn.addEventListener("click", () => {
+  window.location.reload();
+});

@@ -4,7 +4,7 @@
 session_start();
 
 // Les fonctions
-require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '../includes/functions.php');
 
 // Récupération des données du Json et mise en session des données
 $data = getJsonFile($_SERVER['DOCUMENT_ROOT'] . '../assets/punishment.json');

@@ -18,16 +18,20 @@
             }
 
             <?php
-            $saison = "Saison " . rand(1, 3);
-            $episodeAleatoire = getPunitionAleatoire($saison);
+            if(isset($_SESSION['seasonSelected']) && !empty($_SESSION['seasonSelected'])) {
+                $saison =  $_SESSION['seasonSelected'] ;
+            } else {
+                $saison = "Saison " . rand(1, 3);
+            }
+            $episodeAleatoire = getPunitionAleatoire($saison, $SESSION['listePunitions']);
             $episode = $episodeAleatoire['episode'];
             $punition = $episodeAleatoire['punition'];
             for ($i = 0; $i < 8; $i++) {
-                echo 'setTimeout(function() { writeLine("' . $punition . '"); }, ' . ($i * 2000) . ');';
+                echo 'setTimeout(function() { writeLine("' . $punition . '"); }, ' . ($i * 1500) . ');';
             }
             ?>
             // Une fois les 8 paragraphes affichés, j'ajoute le titre et la saison
-            setTimeout(function() { writeTitle("<?php echo $saison . ' - ' . $episode; ?>"); }, 8 * 2000);
+            setTimeout(function() { writeTitle("<?php echo $saison . ' - ' . $episode; ?>"); }, 8 * 1500);
         
         </script>
         <img src="./assets/images/BS.png" alt="Bart Simpson">
