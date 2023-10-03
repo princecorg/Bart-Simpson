@@ -12,3 +12,10 @@ Une punition extraite aléatoirement depuis le fichier Json doit être affichée
 Cette dernière devra être écrite plusieurs fois (entre 5 et 10) avec un intervalle de temps défini  
 Une modale proposera à l'utilisateur de choisir à partir de quelle saison extraire la punition à afficher.  
 Cette information devra être conservée en session.
+## Screenshots :
+Vue Desktop :  
+<img alt="screenshot01 : desktop view" src="assets/images/img01.jpg" width="600">  
+Vue Mobile :  
+<img alt="screenshot02 : mobile view" src="assets/images/img02.jpg" width="200">  
+Modale :  
+<img alt="screenshot01 : modal view" src="assets/images/img03.jpg" width="200">  
