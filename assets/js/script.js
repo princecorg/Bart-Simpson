@@ -3,6 +3,7 @@ const openModalBtn = document.getElementById("openModalBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const modal = document.getElementById("myModal");
 const overlay = document.getElementById("overlay");
+const playBtn = document.getElementById("playBtn");
 
 // Ouvrir la modal au clic sur le bouton
 openModalBtn.addEventListener("click", () => {
@@ -22,7 +23,6 @@ overlay.addEventListener("click", () => {
 });
 
 // Gestion du bouton de Replay
-let playBtn = document.getElementById("playBtn");
 playBtn.addEventListener("click", () => {
   window.location.reload();
 });

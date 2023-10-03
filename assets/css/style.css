@@ -11,12 +11,12 @@
 }
 
 body {
-  max-width: 1600px;
-  margin: auto;
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
-h1 {
+h1,
+footer {
   text-transform: uppercase;
   font-family: "Simpsonfont";
 }
@@ -27,8 +27,7 @@ h2 {
 }
 
 main {
-  width: 100%;
-  /* margin: auto; */
+  width: 94%;
   padding: 10px;
   text-align: center;
 }
@@ -155,6 +154,16 @@ form label {
 main > p {
   font-size: 24px;
   font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  background: black;
+  height: 40px;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 768px) {

@@ -27,11 +27,11 @@
             $episode = $episodeAleatoire['episode'];
             $punition = $episodeAleatoire['punition'];
             for ($i = 0; $i < 8; $i++) {
-                echo 'setTimeout(function() { writeLine("' . $punition . '"); }, ' . ($i * 1500) . ');';
+                echo 'setTimeout(function() { writeLine("' . $punition . '"); }, ' . ($i * 1000) . ');';
             }
             ?>
             // Une fois les 8 paragraphes affichés, j'ajoute le titre et la saison
-            setTimeout(function() { writeTitle("<?php echo $saison . ' - ' . $episode; ?>"); }, 8 * 1500);
+            setTimeout(function() { writeTitle("<?php echo $saison . ' - ' . $episode; ?>"); }, 8 * 1000);
         
         </script>
         <img src="./assets/images/BS.png" alt="Bart Simpson">
