@@ -15,6 +15,7 @@ Cette situation nous servira de contexte à la mise en place d'un petit exercice
 - Cette dernière devra être écrite plusieurs fois (entre 5 et 10) avec un intervalle de temps défini.  
 - Une modale proposera à l'utilisateur de choisir à partir de quelle saison extraire la punition à afficher.  
 - Cette information devra être conservée en session et affichée dans la page.  
+- Les informations stockées en session pourront être supprimées par l'utilisateur.   
  
 ## Screenshots :
 | Vue Desktop  |
