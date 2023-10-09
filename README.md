@@ -7,7 +7,8 @@ Cette situation nous servira de contexte à la mise en place d'un petit exercice
 :heavy_check_mark: Utiliser les variables de session.  
 :heavy_check_mark: Gérer un formulaire avec la méthode Post.  
 :heavy_check_mark: Créer et appeler des fonctions en PHP et JavaScript.   
-:heavy_check_mark: Générer et lire un cookie. 
+:heavy_check_mark: Générer et lire un cookie.
+:heavy_plus_sign: Utiliser une requête Ajax pour supprimer les variables de session.  
 
 ### Version 1 :
 - Une punition extraite aléatoirement depuis le fichier Json doit être affichée dans le tableau.  
