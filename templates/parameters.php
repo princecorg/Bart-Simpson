@@ -18,5 +18,5 @@
         </div>
     </div>
 </section>
-<p><?php echo isset($_SESSION['seasonSelected']) ? 'Saison sélectionnée : ' . $_SESSION['seasonSelected'] : '';?></p>
+<p><?php echo isset($_SESSION['seasonSelected']) ? 'Saison sélectionnée : ' . $_SESSION['seasonSelected']."<span id='reset' class='reset fa-solid fa-trash'></span>" : '';?></p>
 
