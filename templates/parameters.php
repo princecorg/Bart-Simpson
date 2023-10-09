@@ -9,7 +9,7 @@
             <span id="closeModalBtn" class="close fa-solid fa-xmark fa-beat fa-2x"></span>
             <h2>Paramétrage</h2>
             <div id="modal">
-                <form action="../includes/formprocess.php" method="post">
+                <form action="includes/formprocess.php" method="post">
                     <label for="seasonSelect" >Choix de la saison :</label>
                     <?php showSelect($SESSION['listePunitions']) ?> 
                     <button id="seasonBtn" type="submit">Confirmer</button>                  
